@@ -1,0 +1,18 @@
+{
+  "name": "crawler-separation-fairness",
+  "version": "0.1.0",
+  "description": "Model and evaluate crawler separation policies for a fairer AI web.",
+  "license": "MIT",
+  "author": "victorstack-ai",
+  "bin": {
+    "crawl-sep": "./src/cli.js"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha \"test/**/*.test.js\""
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "mocha": "^10.4.0"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "site": "example.com",
+  "principle": "separation",
+  "userAgents": {
+    "indexing": ["Googlebot", "Bingbot"],
+    "training": ["Google-Extended", "CCBot"],
+    "other": ["DuckDuckBot"]
+  },
+  "rules": [
+    {
+      "group": "indexing",
+      "allow": ["/"],
+      "disallow": ["/private", "/paywall"]
+    },
+    {
+      "group": "training",
+      "allow": ["/public"],
+      "disallow": ["/"]
+    },
+    {
+      "group": "other",
+      "allow": ["/"],
+      "disallow": ["/private"]
+    }
+  ]
+}
